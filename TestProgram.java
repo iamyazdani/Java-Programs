@@ -5,7 +5,13 @@ public class TestProgram {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int num = sc.nextInt();
-        System.out.println((num % 2 == 0) ? "Number is Even" : "Number is Odd");
+        int count = 0;
+        while (num > 0) {
+            // int rem = num % 10;
+            count++;
+            num = num / 10;
+        }
+        System.out.println(count);
         sc.close();
     }
 }
