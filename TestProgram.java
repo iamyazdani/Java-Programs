@@ -10,7 +10,7 @@ public class TestProgram {
             count++;
             num = num / 10;
         }
-        System.out.println(count);
+        System.out.println("Number of digits count: " + count);
         sc.close();
     }
 }
