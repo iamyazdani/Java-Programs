@@ -6,6 +6,6 @@ public class DateTimeExample {
         LocalDateTime currentDateTime = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
         String formattedDateTime = currentDateTime.format(formatter); 
-        System.out.println(formattedDateTime);
+        System.out.println("Current Date and Time: " + formattedDateTime);
     }
 }
